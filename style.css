@@ -1,0 +1,53 @@
+body{
+    background-color: rgba(0, 0, 0, 0.315);
+    
+    text-align: center;
+}
+
+.game-table{
+    margin-top: 120px;
+}
+
+button{
+    padding: 0px;
+    margin: 12px;
+}
+
+
+img{
+    width: 200px;
+    border: 4px solid white;
+   
+}
+h1{
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    color: white;
+    
+}
+#result{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    
+}
+
+.resultLabel{
+    margin: 48px;
+}
+#userPoints,
+#computerPoints{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 36px;
+    color: white;
+    margin-left: 32px;
+    margin-right: 32PX;
+}
+.winner{
+    margin-top: 60px;
+}
+#print-winner{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 32px ;
+    
+}
