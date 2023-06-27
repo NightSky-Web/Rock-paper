@@ -4,30 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock-Paper-Scissors</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script>
-        const symbols = ["rock", "paper", "scissors"];
-        function getComputerChoice(){
-            let computerChoice = symbols[Math.floor(Math.random() * symbols.length)]
-            return computerChoice;
-        }
-        function playRound(playerSelection, computerSelection){
-            if (playerSelection === computerSelection){
-                return "It is draw."
-            }
-            if (playerSelection === "rock" && computerSelection === "scissors" || playerSelection === "paper" && computerSelection === "rock" || playerSelection === "scissors" && computerSelection === "paper"){
-                return "You win! " + playerSelection + " beats " + computerSelection;
-            }
-            else{
-                return "You lose! " + computerSelection + " beats " + playerSelection;
-            }
-        }
-        const playerSelection = prompt("Pick Rock, Paper, or Scissors: ").toLowerCase();
-        const computerSelection = getComputerChoice()
-        
-        console.log(playRound(playerSelection, computerSelection))
-    </script>
+    <div class="game-table">
+        <h1>Let's play some Rock-Paper-Scissors</h1>
+        <div class="images">
+            <button id ="rockBtn">
+                <img src="https://img.icons8.com/emoji/512/rock-emoji.png" alt="rockPic">
+            </button>
+            <button id="paperBtn">
+                <img src="https://icons-for-free.com/iconfiles/png/512/file+menu+page+paper+icon-1320165846955357008.png" alt="paperPic">
+            </button>
+            <button id="scissorsBtn">
+                <img src="https://cdn-icons-png.flaticon.com/512/6342/6342526.png" alt="scissorsPic">
+            </button>
+        </div>        
+        <div class="resultLabel">
+            <label id="result">Who gets 5 points sooner wins the game</label>
+        </div>
+        <div class="scores">
+            <label id="userPoints">User - 0</label>
+            <label id="computerPoints">Computer - 0</label>
+        </div>
+        <div class="winner">
+            <label id="print-winner"></label>
+        </div>  
+    </div>
 </body>
 </html>
